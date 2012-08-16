@@ -1,0 +1,23 @@
+\chapter{Gaussian Process Regression}
+
+This chapter describes algorithms that implement Gaussian process regression
+in the \shogun{} toolbox. Generally speaking, regression refers to the problem
+of determining how a dependent variable (y) changes in relation the changes in 
+independent variables (x). The goal of regression is to construct a function by
+learning unknown parameters \w such that y approxequals f(x,w). In the traditional
+regression model, the parameters \w are weights applied to the individual components
+in x (or a transformation of x).  In this case, we have f(x,w) = phi(x)dot w, and
+typically y = f(x,w) + e, where e is Gaussian noise. 
+
+Gaussian process regression approaches the regression problem from a different perspective.
+In this case, the dependent variables collectively form a Gaussian process. A Gaussian process
+is a collection of random variables (X collection) in which any finite collection (X finite) 
+defines a multivariate gaussian distribution (Gaussian Distribution).A Gaussian process is defined
+by a mean function (m(x)) and a covariance functin (k(x,x)). In this case, f(x) is distributed as
+(distribution). Essentially, Gaussian process regression focuses on a distribution of possible functions
+that fit the data instead of a combination of feature weights. Rassmussen 
+
+1. Exact Prediction
+2. Hyperparameter Learning
+3. FITC Approximation
+4. Non-Gaussian Likelihoods and Laplacian Approximation.
